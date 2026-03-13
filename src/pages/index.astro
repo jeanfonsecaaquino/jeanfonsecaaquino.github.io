@@ -22,7 +22,7 @@ import Card from "../components/Card.astro";
 		</div>
 
 		<div
-			class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-8 gap-6 min-h-[1200px]"
+			class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-9 gap-6 min-h-[1200px]"
 		>
 			<!-- Hero Section -->
 			<Card
@@ -310,6 +310,31 @@ import Card from "../components/Card.astro";
 								</span>
 							)
 						)
+					}
+				</div>
+			</Card>
+
+			<!-- AI & Workflow -->
+			<Card
+				className="md:col-span-2 md:row-span-1 md:col-start-3 order-10"
+				title="IA & Workflow"
+				delay={1.0}
+			>
+				<div class="grid grid-cols-2 md:grid-cols-3 gap-3 pt-2">
+					{
+						[
+							"Cursor",
+							"WindSurf",
+							"Claude Code",
+							"Antigravity",
+							"Gemini",
+							"NoteBookLM",
+							"Spec Driven Dev",
+						].map((tech) => (
+							<span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold tracking-widest text-zinc-400 hover:text-neon hover:border-neon/30 transition-all cursor-default uppercase text-center">
+								{tech}
+							</span>
+						))
 					}
 				</div>
 			</Card>
